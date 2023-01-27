@@ -1,5 +1,6 @@
 <template>
   <Header v-if="showHeader"/>
+  <CheckBox/>
 
   <div v-show="showName">
     Nome: {{ firstName }} <br>
@@ -20,12 +21,14 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
+import CheckBox from './components/CheckBox.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Header
+    Header,
+    CheckBox
   },
   data() {
     return {

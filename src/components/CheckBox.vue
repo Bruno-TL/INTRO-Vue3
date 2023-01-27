@@ -1,6 +1,7 @@
 <template>
     <h1>{{ header }}</h1>
     <input type="text" v-model="newItem" placeholder="Add an new item">
+    {{ newItem }}
     <label for="">
         Priority:
         <select v-model="newItemPriority">
@@ -39,7 +40,7 @@ export default {
                 {id:2, label:"16 party hats"},
                 {id:3, label:"6 party hats"},
             ],
-            iceCreamFlavors:''
+            iceCreamFlavors:[]
 
         }
         
