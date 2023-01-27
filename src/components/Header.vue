@@ -1,10 +1,14 @@
 <template>
     <div class="header">
         <h1 :class="{'title':isHome}">Curso Vue 3</h1>
-        <p :class="pClass">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur voluptas tempora necessitatibus mollitia ratione officiis deleniti similique beatae nemo, laborum quibusdam at totam optio vel ab! Pariatur tenetur illum error?</p>
+        <p :class="pClass">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur voluptas tempora necessitatibus mollitia ratione officiis deleniti similique beatae nemo, laborum quibusdam at totam optio vel ab! Pariatur tenetur illum error?
+        </p>
+        <p :style="{'color': 'blue'}">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur amet, harum, excepturi optio corporis tempore alias repellendus sunt a est facere id qui nesciunt autem accusamus expedita earum quo ipsum.
+        </p>
         <div 
             v-for="(obj, index) in todo" 
-            v-bind:key="obj.id"
+            :key="obj.id"
             class="todos-item"
             >
             <img 
@@ -24,7 +28,7 @@ export default {
     data() {
         return {
             isHome: true,
-            pClass: 'text',
+            pClass: ['title','parag'],
             todo: [
                 {
                     "userId": 1,
@@ -84,5 +88,8 @@ export default {
 }
 .title{
     color: green;
+}
+.parag {
+    font-size: 2em;
 }
 </style>
