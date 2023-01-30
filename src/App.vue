@@ -2,6 +2,7 @@
   <Header v-if="showHeader"/>
   <CheckBox/>
   <Eventos/>
+  <PropsComputed/>
   <div v-show="showName">
     Nome: {{ firstName }} <br>
     Sobrenome: {{ lastName }}
@@ -23,6 +24,7 @@ import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
 import CheckBox from './components/CheckBox.vue'
 import Eventos from './components/Eventos.vue'
+import PropsComputed from './components/PropsComputed'
 
 
 export default {
@@ -31,7 +33,8 @@ export default {
     HelloWorld,
     Header,
     CheckBox,
-    Eventos
+    Eventos,
+    PropsComputed
 },
   data() {
     return {
