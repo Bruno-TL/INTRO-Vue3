@@ -1,6 +1,7 @@
 <template>
     <h1>{{ header }}</h1>
     <input type="text" v-model="newItem" placeholder="Add an new item">
+    {{ newItem }}
     <label for="">
         Priority:
         <select v-model="newItemPriority">
