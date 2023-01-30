@@ -1,6 +1,7 @@
 <template>
   <Header v-if="showHeader"/>
-
+  <CheckBox/>
+  <Eventos/>
   <div v-show="showName">
     Nome: {{ firstName }} <br>
     Sobrenome: {{ lastName }}
@@ -20,13 +21,18 @@
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import Header from './components/Header.vue'
+import CheckBox from './components/CheckBox.vue'
+import Eventos from './components/Eventos.vue'
+
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    Header
-  },
+    Header,
+    CheckBox,
+    Eventos
+},
   data() {
     return {
       showHeader: true,

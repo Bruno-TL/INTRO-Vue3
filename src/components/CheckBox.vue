@@ -39,7 +39,7 @@ export default {
                 {id:2, label:"16 party hats"},
                 {id:3, label:"6 party hats"},
             ],
-            iceCreamFlavors:''
+            iceCreamFlavors:[]
 
         }
         
