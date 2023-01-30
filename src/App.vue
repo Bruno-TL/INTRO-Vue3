@@ -3,6 +3,7 @@
   <CheckBox/>
   <Eventos/>
   <PropsComputed/>
+  <Observadores/>
 
   <div v-show="showName">
     Nome: {{ firstName }} <br>
@@ -26,6 +27,7 @@ import Header from './components/Header.vue'
 import CheckBox from './components/CheckBox.vue'
 import Eventos from './components/Eventos.vue'
 import PropsComputed from './components/PropsComputed'
+import Observadores from './components/Observadores.vue'
 
 export default {
   name: 'App',
@@ -34,7 +36,8 @@ export default {
     Header,
     CheckBox,
     Eventos,
-    PropsComputed
+    PropsComputed,
+    Observadores
 },
   data() {
     return {
