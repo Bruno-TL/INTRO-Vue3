@@ -10,7 +10,14 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
-  }
+  },
+  // Desmontagem
+  beforeUnmount(){
+    console.log('beforeUnmount');
+  },
+  unmounted(){
+    console.log('unmount');
+  },
 }
 </script>
 
