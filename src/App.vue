@@ -5,6 +5,9 @@
   <PropsComputed/>
   <Observadores/>
   <LifeCycle/>
+  <Slots>
+    <p>Aqui é o slots</p>
+  </Slots>
 
   <div v-show="showName">
     Nome: {{ firstName }} <br>
@@ -30,6 +33,7 @@ import Eventos from './components/Eventos.vue'
 import PropsComputed from './components/PropsComputed'
 import Observadores from './components/Observadores.vue'
 import LifeCycle from './components/LifeCycle.vue'
+import Slots from './components/Slots.vue'
 
 export default {
   name: 'App',
@@ -40,7 +44,8 @@ export default {
     Eventos,
     PropsComputed,
     Observadores,
-    LifeCycle
+    LifeCycle,
+    Slots
 },
   data() {
     return {
